@@ -12,3 +12,9 @@ RUN /tmp/build_and_make_sdformat.sh
 
 COPY build_and_make_gazebo.sh /tmp/build_and_make_gazebo.sh
 RUN /tmp/build_and_make_gazebo.sh
+
+COPY build_and_make_revolve.sh /tmp/build_and_make_revolve.sh
+RUN /tmp/build_and_make_revolve.sh
+
+COPY build_and_make_tol-revolve.sh /tmp/build_and_make_tol-revolve.sh
+RUN /tmp/build_and_make_tol-revolve.sh
