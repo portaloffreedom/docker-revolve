@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 # DEPENDECIES
 GAZEBO_BASE_DEPENDENCIES="libogre-1.9-dev                  \\
@@ -128,4 +129,4 @@ make -j4
 # INSTALL GAZEBO
 make install
 
-rm -r gazebo
+rm -r /revolve/gazebo

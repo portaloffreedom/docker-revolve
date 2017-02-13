@@ -1,17 +1,18 @@
 #!/bin/bash
+set -e
 
-apt-get -y install git python-pip libgsl-dev libgsl2 libboost-python-dev
+apt-get -y install git python-pip libgsl-dev libgsl2 libboost-python-dev libyaml-cpp-dev
 
 # DOWNLOAD REVOLVE
 cd /revolve
 git clone https://github.com/portaloffreedom/revolve-brain.git
 cd /revolve/revolve-brain
-git checkout rlpower
+git checkout light-supg
 
 cd /revolve
 git clone https://github.com/portaloffreedom/tol-revolve.git
 cd /revolve/tol-revolve
-git checkout brain-external-library
+git checkout light-supg
 
 
 # BUILD GAZEBO
